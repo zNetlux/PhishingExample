@@ -1,5 +1,4 @@
 <?php
-
 addIp("files/ips.txt", $_SERVER['REMOTE_ADDR'] . "\n");
 
 function writeFile($file, $data) {
